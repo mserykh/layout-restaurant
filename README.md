@@ -7,8 +7,8 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 
 ### General
 
-- [ ] The name of the HTML file should be index.html
-- [ ] Create separate folders for images, fonts, and styles
+- [x] The name of the HTML file should be index.html
+- [x] Create separate folders for images, fonts, and styles
 - [ ] The markup width should be 1600px. Hence the layout will be tested on 1600px screen width or wider. The markup should be centered. If you are going to implement the task on the device with screen width lower then 1600px, the scrollbar will appear, and it is Ok (you can use zoom out)
 - [ ] You should implement CSS style effects for the hover events(which effect to use is up to you - for example, the color of the navigation button can change on hover)
 - [ ] The header can be fixed on the gradient background when scrolling
@@ -18,12 +18,12 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 
 ### Semantic layout
 
-- [ ] HTML5 semantic tags should be used: `header`, `nav`, `section`, `article`, `footer`, `form` + fields, `figure`
-- [ ] Class names should be reasonable and correct, avoid names such as .right-column, .third-form, .left, .big. Use more meaningful ones - .heading, .form-container, .wrapper, .menu-column. You are also welcome to use pseudo-classes (:first-child, last-child, etc.)
-- [ ] Using `id` for styles will be considered as a mistake
+- [x] HTML5 semantic tags should be used: `header`, `nav`, `section`, `article`, `footer`, `form` + fields, `figure`
+- [x] Class names should be reasonable and correct, avoid names such as .right-column, .third-form, .left, .big. Use more meaningful ones - .heading, .form-container, .wrapper, .menu-column. You are also welcome to use pseudo-classes (:first-child, last-child, etc.)
+- [x] Using `id` for styles will be considered as a mistake
 - [ ] The logo should be implemented correctly
-- [ ] Don't forget to use `<h1>` tag on the page
-- [ ] Navigation should be implemented with a `<nav>` tag. Clickable parts of the menu should be links
+- [x] Don't forget to use `<h1>` tag on the page
+- [x] Navigation should be implemented with a `<nav>` tag. Clickable parts of the menu should be links
 
 ### Fonts
 - [ ] The fonts should be imported properly. Don't forget about the font-weight
