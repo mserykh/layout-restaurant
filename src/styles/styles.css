@@ -41,7 +41,7 @@ html {
 
 .page-header {
     min-height: 750px;
-    background-image: url('./src/images/bg-header.jpg');
+    background-image: url('../images/bg-header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +170,7 @@ html {
 .intro__title::after {
     content: "";
     position: absolute;
-    background: url('/src/images/header-divider.png');
+    background: url('../images/header-divider.png');
     width: 230px;
     height: 43px;
     bottom: -70px;
@@ -250,7 +250,7 @@ html {
 .right-food__title::after {
     content: "";
     position: absolute;
-    background-image: url("./src/images/food-divider.png");
+    background-image: url("../images/food-divider.png");
     width: 247px;
     height: 24px;
     bottom: -40px;
@@ -278,7 +278,7 @@ html {
 }
 
 .ingredients {
-    background-image: url("./src/images/ing-bg.jpg");
+    background-image: url("../images/ing-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +313,7 @@ html {
 .ingredients__title::after {
     content: "";
     position: absolute;
-    background-image: url("./src/images/ing-divider.png");
+    background-image: url("../images/ing-divider.png");
     width: 247px;
     height: 24px;
     bottom: -50px;
