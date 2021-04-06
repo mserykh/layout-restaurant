@@ -7,37 +7,59 @@
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/fontawesome/all.min.css">
 </head>
 <body>
     <header class="page-header">
-        <div class="page-header__container">
-            <h1 class="visually-hidden">
-                Lambda is the best restaurant in Chelsea. Book a table. 
-            </h1>
-            <nav class="page-header__nav nav">
-                <a href="#" class="logo">Lambda</a>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Igredients</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Reservations</a></li>
-                </ul>
-                <div class="page-header__social-links social-links">
-                    <ul class="social-list">
-                        <li class="social-list__item"><a href="#" class="social-list__link">Twitter</a></li>
-                        <li class="social-list__item"><a href="#" class="social-list__link">Youtube</a></li>
-                        <li class="social-list__item"><a href="#" class="social-list__link">Facebook</a></li>
-                    </ul>
+        <div class="nav-background">
+            <div class="page-header__container">
+                <h1 class="visually-hidden">
+                    Lambda is the best restaurant in Chelsea. Book a table. 
+                </h1>
+                <nav class="page-header__nav nav">
+                    <div class="container">
+                        <a href="#" class="nav__logo"><span>Lambda</span></a>
+                        <ul class="nav__list list">
+                            <li class="nav__item  nav__item--active"><a href="#" class="nav__link link">Home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link link">About</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link link">Igredients</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link link">Menu</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link link">Reviews</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link link">Reservations</a></li>
+                        </ul>
+                        <div class="page-header__social-links social-links">
+                            <ul class="social-list list">
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link link" title="Our Twitter">
+                                        <span class="visually-hidden">Our Twitter</span>
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link link" title="Our Youtube channel">
+                                        <span class="visually-hidden">Our Youtube channel</span>
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" class="social-list__link link" title="Our Facebook page">
+                                        <span class="visually-hidden">Our Facebook page</span>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="page-header__intro intro">
+                    <div class="container">
+                        <h2 class="intro__title title">The right ingredients for the right food</h2>
+                        <a href="#" class="btn intro__btn btn--book">Book a table</a>
+                        <a href="#" class="btn intro__btn btn--menu">See the menu</a>
+                    </div>
                 </div>
-            </nav>
-            <div class="page-header__intro intro">
-                <h2 class="into__title title">The right ingredients for the right food</h2>
-                <a href="#" class="btn intro__btn btn--book">Book a table</a>
-                <a href="#" class="btn intro__btn btn--menu">See the menu</a>
             </div>
-        </div>
+        </div>  
     </header>
     <main class="main">
         <section class="right-food">
@@ -52,24 +74,24 @@
                         <img src="src/images/cook.png" alt="Photo of restaurant's Chef with his signature">
                     </figure>
                 </div>
-                <figure class="right-food__image">
+                <figure class="right-food__bg-image">
                     <img src="src/images/dish.png" alt="Delicious steak served with veggies on the white plate.">
                 </figure>
             </div>
         </section>
-        <section class="ingridients">
-            <div class="ingridients__container">
-                <div class="ingridients__text-block">
-                    <h3 class="ingridients__title title">
+        <section class="ingredients">
+            <div class="ingredients__container">
+                <div class="ingredients__text-block">
+                    <h3 class="ingredients__title title">
                         Fine ingredients
                     </h3>
-                    <p class="ingridients__text">
+                    <p class="ingredients__text">
                         If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
                     </p>
-                    <div class="container">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                    <div class="ingredients__img-container">
+                        <img src="/src/images/ing-small1.png" alt="">
+                        <img src="/src/images/ing-small2.png" alt="">
+                        <img src="/src/images/ing-small3.png" alt="">
                     </div>
                 </div>
             </div>
@@ -81,17 +103,17 @@
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Tzatsiki</dt>
                         <dd class="menu-list__price">$3.99</dd>
-                        <dd class="menu-list__ingridients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
+                        <dd class="menu-list__ingredients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Aubergine Salad</dt>
                         <dd class="menu-list__price">$5.50</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Aubergine Salad</dt>
                         <dd class="menu-list__price">$5.25</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                 </div>
                 <div class="menu-item">
@@ -99,17 +121,17 @@
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Olive Special</dt>
                         <dd class="menu-list__price">$5.99</dd>
-                        <dd class="menu-list__ingridients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
+                        <dd class="menu-list__ingredients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list menu-list--special">
                         <dt class="menu-list__title">Greek Salad</dt>
                         <dd class="menu-list__price">$5.50</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Gusto Salad</dt>
                         <dd class="menu-list__price">$5.25</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                 </div>
                 <div class="menu-item">
@@ -117,12 +139,12 @@
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Haloumi</dt>
                         <dd class="menu-list__price">$5.99</dd>
-                        <dd class="menu-list__ingridients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
+                        <dd class="menu-list__ingredients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Spinach_Pie</dt>
                         <dd class="menu-list__price">$5.50</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                 </div>
                 <div class="menu-item">
@@ -130,22 +152,22 @@
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Cornish Mackerel</dt>
                         <dd class="menu-list__price">$5.99</dd>
-                        <dd class="menu-list__ingridients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
+                        <dd class="menu-list__ingredients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list menu-list--special">
                         <dt class="menu-list__title">Roast Lamb</dt>
                         <dd class="menu-list__price">$5.50</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Fried Chicken</dt>
                         <dd class="menu-list__price">$5.25</dd>
-                        <dd class="menu-list__ingridients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
+                        <dd class="menu-list__ingredients">Pureed eggplant, garlic, green pepper and tomato dip.</dd>
                     </dl>
                     <dl class="menu-item__menu-list">
                         <dt class="menu-list__title">Pastitsio</dt>
                         <dd class="menu-list__price">$5.99</dd>
-                        <dd class="menu-list__ingridients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
+                        <dd class="menu-list__ingredients">Refreshing traditional cucumber and garlic yoghurt dip.</dd>
                     </dl>
                 </div>
             </div>
@@ -198,10 +220,10 @@
                 </form>
                 <div class="reservation__galley gallery">
                     <figure class="gallery__image">
-                        <img src="/src/images/main-dish.png" alt="">
+                        <img src="/src/images/main-dish.jpg" alt="">
                     </figure>
                     <figure class="gallery__image">
-                        <img src="/src/images/granola.png" alt="">
+                        <img src="/src/images/granola.jpg" alt="">
                     </figure>
                 </div>
             </div>
@@ -222,7 +244,7 @@
                     Fri-Sun: 7:00am-10:00pm
                 </p>
                 <div class="page-footer__payment-methods">
-                    <ul class="payment-methods__list">
+                    <ul class="payment-methods__list list">
                         <li class="payment-methods__item"><img src="" alt=""></li>
                         <li class="payment-methods__item"><img src="" alt=""></li>
                         <li class="payment-methods__item"><img src="" alt=""></li>
@@ -237,7 +259,7 @@
                     128 Meserole Avenue
                 </address>
                 <div class="page-footer__social-links social-links">
-                    <ul class="social-list">
+                    <ul class="social-list list">
                         <li class="social-list__item"><a href="#" class="social-list__link">Twitter</a></li>
                         <li class="social-list__item"><a href="#" class="social-list__link">Youtube</a></li>
                         <li class="social-list__item"><a href="#" class="social-list__link">Facebook</a></li>
