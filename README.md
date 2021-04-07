@@ -12,9 +12,9 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 - [ ] The markup width should be 1600px. Hence the layout will be tested on 1600px screen width or wider. The markup should be centered. If you are going to implement the task on the device with screen width lower then 1600px, the scrollbar will appear, and it is Ok (you can use zoom out)
 - [ ] You should implement CSS style effects for the hover events(which effect to use is up to you - for example, the color of the navigation button can change on hover)
 - [ ] The header can be fixed on the gradient background when scrolling
-- [ ] Pay your attention to the fact that the background should be a graphic pattern, not just plain white
-- [ ] You may use any grid markup you want (e.g.: Flex or Grid)
-- [ ] Font-awesome can be used for icons
+- [x] Pay your attention to the fact that the background should be a graphic pattern, not just plain white
+- [x] You may use any grid markup you want (e.g.: Flex or Grid)
+- [x] Font-awesome can be used for icons
 
 ### Semantic layout
 
@@ -30,7 +30,7 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 
 ### Blocks and columns
 
-- [ ] Consider the case with more text than in the markup - just add more text to the column and check if the position of the column or layout does not change (limitation by overflow)
+- [ ] Consider the case with more text than in the markup – just add more text to the column and check if the position of the column or layout does not change (limitation by overflow)
 - [ ] You should consider the case when one more column is added to menu section. This column should appear under the first one or in the center of the next line or hidden by overflow property. It should not break the layout by being positioned as a third visible element outside of parent's borders
 - [ ] If you are going to use inline-block property, make sure that there is no free space between the elements
 - [ ] Images in fine ingredients section should be square or rectangle-shaped and should be styled with CSS (border, border-radius)
@@ -39,4 +39,4 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 
 ### Other
 
-- [ ] Pre-processors and post-processors are not necessary. In case if you decide to use these tools, the final file should still be in `.css` format. Use of libraries such as Bootstrap is not allowed
+- [x] Pre-processors and post-processors are not necessary. In case if you decide to use these tools, the final file should still be in `.css` format. Use of libraries such as Bootstrap is not allowed
