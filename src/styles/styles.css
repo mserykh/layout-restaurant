@@ -12,7 +12,6 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    //outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -219,14 +218,20 @@ html {
 }
 
 .right-food {
-    background-color: #cccccc;
-    padding-top: 110px;;
+    background-image: url("../images/pattern-round.png");
+    background-repeat: repeat;
+    padding: 100px 0 50px 0;
 }
 
 .right-food__container {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 75px;
+    background-image:url("../images/dish.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    min-height: 621px;
 }
 
 .right-food__text-block {
@@ -264,17 +269,9 @@ html {
     line-height: 24px;
 }
 
-.right-food__image {
-}
-
 .right-food__image img {
     display: inline-block;
     transform: translateX(20%);
-}
-
-.right-food__bg-image img{
-    margin-top: -50px;
-    
 }
 
 .ingredients {
@@ -289,15 +286,13 @@ html {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    padding: 100px 0;
+    padding: 100px 40px;
 }
 
 .text-block {
     background-color: rgba(0, 0, 0, 0.67);
     padding: 80px 70px;
     text-align: center;
-    margin-right: 40px;
-    
 }
 
 .ingredients__title {
@@ -341,7 +336,6 @@ html {
 }
 
 .menu {
-    background-color: #efefef;
     background-image: url("../images/pattern-hex.png");
     background-repeat: repeat;
 }
@@ -357,25 +351,10 @@ html {
 
 .menu-item {
     width: 474px;
-    text-align: center;
     margin: 0 auto;
     margin-bottom: 36px;
     padding: 0 10px;
-    /*page-break-inside: avoid;
-    break-inside: avoid;*/
-
 }
-/*
-.menu-item:nth-of-type(odd) {
-    float: left;
-    clear: left;
-}
-
-.menu-item:nth-of-type(even) {
-    float: right;
-    clear: right;
-}
-*/
 
 .menu-item__title {
     position: relative;
@@ -383,11 +362,11 @@ html {
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-    color: #cc9000;
+    color: #cc9900;
     text-align: center;
     margin-bottom: 60px;
-
 }
+
 .menu-item__title::after {
     content: "";
     position: absolute;
@@ -450,13 +429,6 @@ html {
     right: 0;
     transform: translateY(-100%);
 }
-.clearfix:before,
-.clearfix:after {
-  content: ".";    
-  display: block;    
-  height: 0;    
-  overflow: hidden;        
-}
 
 .reviews  {
     background-image: url("../images/reviews-bg.jpg");
@@ -471,10 +443,6 @@ html {
     display: flex;
     justify-content: center;
     padding: 100px 0;
-}
-
-.reviews__text-block {
-    margin-right: 0;
 }
 
 .reviews__title {
@@ -526,4 +494,186 @@ html {
     line-height: 45px;
     color: #ffffff;
     font-style: inherit;
+}
+
+.reservation {
+    background-color: #efefef;
+    background-image: url("../images/pattern-round.png");
+    background-repeat: repeat;
+}
+
+.reservation__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 100px 40px;
+}
+
+.form-wrapper {
+    padding: 0 70px;
+    order: 1;
+
+}
+
+.reservation__title {
+    position: relative;
+    font-family: "Yeseva one", serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    color: #cc9900;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reservation__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/divider-gold.png");
+    width: 247px;
+    height: 24px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reservation__text {
+    max-width: 46ch;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.reservation__text p:first-child {
+    margin-bottom: 10px;
+}
+
+.reservation__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+.form__label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 700;
+    color: #c9a131;
+}
+
+.field {
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 0;
+    border: 1px solid #c8c6c6;
+    background-color: rgba(255, 255, 255, 0.4);
+    max-width: 100%;
+    padding: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.field--date {
+    position: relative;
+}
+
+.field--date::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+}
+
+.field--date::before {
+    content: "";
+    background-image: url("../images/calendar.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+  }
+
+.field--date::after {
+    content: attr(data-placeholder);
+    width: 100%;
+    transform: translateX(-34%);
+}
+
+.field--date:focus::after,
+.field--date:valid::after { 
+    display: none
+}
+
+.field--party-size {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    color: #7c7c7c;
+    padding: 0 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
+    background-size: auto;
+}
+
+.field:focus, .field:active {
+    border: 1px solid #c89f2d;
+    border-bottom: none;
+    outline: 1px solid transparent;
+}
+
+.field::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.btn--form {
+    text-transform: none;
+    height: 36px;
+    width: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(200,159,45,0.98);
+}
+
+.btn--form:hover {
+    background-color: #000000;
+    transition: 0.3s ease;
+}
+
+.reservation__galley {
+    display: flex;
+    order: 0;
+}
+
+.gallery__image {
+    margin-right: 30px;
 }
