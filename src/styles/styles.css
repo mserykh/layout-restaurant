@@ -250,7 +250,7 @@ html {
 .right-food__title::after {
     content: "";
     position: absolute;
-    background-image: url("../images/food-divider.png");
+    background-image: url("../images/divider-gold.png");
     width: 247px;
     height: 24px;
     bottom: -40px;
@@ -313,7 +313,7 @@ html {
 .ingredients__title::after {
     content: "";
     position: absolute;
-    background-image: url("../images/ing-divider.png");
+    background-image: url("../images/divider-white.png");
     width: 247px;
     height: 24px;
     bottom: -50px;
@@ -338,4 +338,122 @@ html {
 .ingredients__img-container img {
     display: block;
     border-radius: 50%;
+}
+
+.menu {
+    background-color: #efefef;
+    background-image: url("../images/pattern-hex.png");
+    background-repeat: repeat;
+}
+
+.menu__container {
+    max-width: 1054px;
+    margin: 0 auto;
+    padding: 100px 0;
+    /*columns: 454px;*/
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu-item {
+    width: 474px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding: 0 10px;
+    /*page-break-inside: avoid;
+    break-inside: avoid;*/
+
+}
+/*
+.menu-item:nth-of-type(odd) {
+    float: left;
+    clear: left;
+}
+
+.menu-item:nth-of-type(even) {
+    float: right;
+    clear: right;
+}
+*/
+
+.menu-item__title {
+    position: relative;
+    font-family: "Yeseva one", serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #cc9000;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.menu-item__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/divider-gold.png");
+    width: 247px;
+    height: 24px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-item__menu-list {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-list__title {
+    font-family: "Yeseva one", serif;
+    font-size: 21px;
+    line-height: 24px;
+    color: #c89f2d;
+    position: relative;
+}
+
+.menu-list__title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(200, 159, 45, 0.5);
+    bottom: -10px;
+    left: 0;
+}
+
+.menu-list__price {
+    font-family: "Yeseva one", serif;
+    font-size: 21px;
+    line-height: 24px;
+    color: #c89f2d;
+    text-align: right;
+    transform: translateY(-100%);
+}
+
+.menu-list--special {
+    position: relative;
+    border: 1px solid rgba(200, 159, 45, 0.5);
+    border-bottom: transparent;
+}
+
+.menu-list--special::after {
+    content: 'Special';
+    position: absolute;
+    background-color: rgba(200, 159, 45, 0.65);
+    color: #f8fafa;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 10px;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;        
 }
