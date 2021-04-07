@@ -46,7 +46,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    font-family: "Gentium Book Basic";
+    font-family: "Gentium Book Basic", serif;
     background-color: #191919;
     width: 100%;
 }
@@ -292,7 +292,7 @@ html {
     padding: 100px 0;
 }
 
-.ingredients__text-block {
+.text-block {
     background-color: rgba(0, 0, 0, 0.67);
     padding: 80px 70px;
     text-align: center;
@@ -307,7 +307,7 @@ html {
     font-weight: 400;
     font-family: "Yeseva One";
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 }
 
 .ingredients__title::after {
@@ -456,4 +456,74 @@ html {
   display: block;    
   height: 0;    
   overflow: hidden;        
+}
+
+.reviews  {
+    background-image: url("../images/reviews-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviews__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.reviews__text-block {
+    margin-right: 0;
+}
+
+.reviews__title {
+    font-size: 36px;
+    color:  #ffffff; 
+    font-weight: 400;
+    font-family: "Yeseva One", serif;
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.reviews__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/divider-white.png");
+    width: 247px;
+    height: 24px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.review__text{
+    max-width: 48ch;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #dde0df;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.review__text::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/quotation.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 25px;
+    transform: translate(-100%, -25%);
+}
+
+.review__source cite {
+    font-size: 18px;
+    line-height: 45px;
+    color: #ffffff;
+    font-style: inherit;
 }
