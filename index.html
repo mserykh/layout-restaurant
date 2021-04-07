@@ -74,9 +74,9 @@
                         <img src="./src/images/cook.png" alt="Photo of restaurant's Chef with his signature">
                     </figure>
                 </div>
-                <figure class="right-food__bg-image">
+                <!-- <figure class="right-food__bg-image">
                     <img src="./src/images/dish.png" alt="Delicious steak served with veggies on the white plate.">
-                </figure>
+                </figure> -->
             </div>
         </section>
         <section class="ingredients">
@@ -212,37 +212,40 @@
         </section>
         <section class="reservation">
             <div class="reservation__container">
-                <h3 class="reservation__title title">Just the right food</h3>
-                <p class="reservation__text">
-                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food. Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
-                </p>
-                <form class="reservation__form form" method="post" action="#">
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label for="block-name" class="form__label">Name</label>
-                            <input type="text" class="field field--text" name="name" id="block-name" required placeholder="your name*">
-                        </div>
-                        <div class="form__group">
-                            <label for="block-email" class="form__label">Email</label>
-                            <input type="email" class="field field--email" name="email" id="block-email" required placeholder="your name*">
-                        </div>
-                        <div class="form__group">
-                            <label for="block-date" class="form__label">Date</label>
-                            <input type="date" class="field field--date" name="date" id="block-date" required placeholder="date*" data-date="date*">
-                        </div>
-                        <div class="form__group">
-                            <label for="block-party-size" class="form__label">Party number</label>
-                            <select class="field field--party-size" name="partySize" id="block-party-size">
-                                <option value="" selected disabled hidden>Party number</option>
-                                <option value="1">1 person</option>
-                                <option value="2">2 people</option>
-                                <option value="3">3 people</option>
-                                <option value="4">4 people</option>
-                            </select>
+                <div class="form-wrapper">
+                    <h3 class="reservation__title title">Just the right food</h3>
+                    <div class="reservation__text">
+                        <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
+                        <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                    </div>
+                    <form class="reservation__form form" method="post" action="#">
+                        <div class="form__content">
+                            <div class="form__group">
+                                <label for="block-name" class="form__label">Name</label>
+                                <input type="text" class="field field--text" name="name" id="block-name" required placeholder="your name*">
+                            </div>
+                            <div class="form__group">
+                                <label for="block-email" class="form__label">Email</label>
+                                <input type="email" class="field field--email" name="email" id="block-email" required placeholder="your email*">
+                            </div>
+                            <div class="form__group">
+                                <label for="block-date" class="form__label">Date</label>
+                                <input type="date" class="field field--date" name="date" id="block-date" required data-placeholder="date*">
+                            </div>
+                            <div class="form__group">
+                                <label for="block-party-size" class="form__label">Party number</label>
+                                <select class="field field--party-size" name="partySize" id="block-party-size">
+                                    <option value="" selected disabled hidden>party number</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                </select>
+                            </div>
                         </div>
                         <button class="btn btn--form" type="submit">Book now!</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
                 <div class="reservation__galley gallery">
                     <figure class="gallery__image">
                         <img src="src/images/main-dish.jpg" alt="">
