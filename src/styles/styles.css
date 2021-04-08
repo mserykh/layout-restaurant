@@ -4,6 +4,21 @@ html {
     color: #4c4c4c;
     line-height: 1.5;
     font-weight: 400;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 *,
@@ -48,9 +63,6 @@ html {
     font-family: "Gentium Book Basic", serif;
     background-color: #191919;
     width: 100%;
-}
-
-.nav-background {
 }
 
 .page-header__container {
