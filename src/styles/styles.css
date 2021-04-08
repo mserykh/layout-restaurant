@@ -46,6 +46,7 @@ main {
 .title {
     font-family: "Yeseva One", serif;
     font-weight: 400;
+    text-align: center;
 }
 
 .link {
@@ -155,7 +156,7 @@ main {
 
 .social-list__link {
     height: 100%;
-
+    display: inline-block;
 }
 
 .fab {
@@ -688,4 +689,160 @@ main {
 
 .gallery__image {
     margin-right: 30px;
+}
+
+.page-footer {
+    background-color: #191919;
+}
+
+.page-footer__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 60px 40px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    color: #ffffff;
+}
+
+.page-footer__about,
+.page-footer__hours,
+.page-footer__location {
+    text-align: center;
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.page-footer__title {
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.page-footer__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/divider-footer.png");
+    width: 199px;
+    height: 19px;
+    bottom: -17px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.page-footer__text {
+    max-width: 38ch;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.page-footer__about .page-footer__text {
+    margin-bottom: 0;
+}
+
+.page-footer__days {
+    font-weight: 700;
+}
+
+.payment-methods__list {
+    text-align: center;
+}
+
+.payment-methods__item {
+    display: inline-block;
+    padding: 0 6px;
+}
+
+.express {
+    display: inline-block;
+    height: 15px;
+    width: 22px;
+    background-image: url("../images/payment.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.paypal {
+    display: inline-block;
+    height: 15px;
+    width: 22px;
+    background-image: url("../images/payment.png");
+    background-repeat: no-repeat;
+    background-position: -33px 0;
+}
+
+.visa {
+    display: inline-block;
+    height: 15px;
+    width: 22px;
+    background-image: url("../images/payment.png");
+    background-repeat: no-repeat;
+    background-position: -66px 0;
+}
+
+.discover {
+    display: inline-block;
+    height: 15px;
+    width: 22px;
+    background-image: url("../images/payment.png");
+    background-repeat: no-repeat;
+    background-position: -99px 0;
+}
+
+.page-footer__address {
+    font-family: "Open Sans",sans-serif;
+    position: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.social-list__item {
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.link--facebook {
+    height: 17px;
+    width: 8px;
+    background-image: url("../images/social-icons-footer.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.link--youtube {
+    height: 17px;
+    width: 15px;
+    background-image: url("../images/social-icons-footer.png");
+    background-repeat: no-repeat;
+    background-position: -20px 0;
+}
+
+.link--twitter {
+    height: 17px;
+    width: 16px;
+    background-image: url("../images/social-icons-footer.png");
+    background-repeat: no-repeat;
+    background-position: -46px 0;
+}
+
+.link--trello {
+    height: 17px;
+    width: 16px;
+    background-image: url("../images/social-icons-footer.png");
+    background-repeat: no-repeat;
+    background-position: -72px 0;
+}
+
+.link--facebook:hover, 
+.link--youtube:hover,
+.link--twitter:hover,
+.link--trello:hover {
+    background-image: url("../images/social-icons-footer-hover.png");
 }
