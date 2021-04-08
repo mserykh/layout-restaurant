@@ -10,7 +10,7 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 - [x] The name of the HTML file should be index.html
 - [x] Create separate folders for images, fonts, and styles
 - [x] The markup width should be 1600px. Hence the layout will be tested on 1600px screen width or wider. The markup should be centered. If you are going to implement the task on the device with screen width lower then 1600px, the scrollbar will appear, and it is Ok (you can use zoom out)
-- [ ] You should implement CSS style effects for the hover events(which effect to use is up to you - for example, the color of the navigation button can change on hover)
+- [x] You should implement CSS style effects for the hover events(which effect to use is up to you - for example, the color of the navigation button can change on hover)
 - [ ] The header can be fixed on the gradient background when scrolling
 - [x] Pay your attention to the fact that the background should be a graphic pattern, not just plain white
 - [x] You may use any grid markup you want (e.g.: Flex or Grid)
@@ -35,7 +35,7 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 - [ ] If you are going to use inline-block property, make sure that there is no free space between the elements
 - [ ] Images in fine ingredients section should be square or rectangle-shaped and should be styled with CSS (border, border-radius)
 - [x] The form should be implemented with a form tag and with proper tags inside of it. Add basic browser validation for Email input field. Name, Email and Date fields should be required. Please ignore typo on one of template's input fields, you should fix it in your application
-- [ ] The footer should be placed at the bottom of the page, meaning that if all the content but the footer is deleted from the page, the footer will still be placed at the bottom
+- [x] The footer should be placed at the bottom of the page, meaning that if all the content but the footer is deleted from the page, the footer will still be placed at the bottom
 
 ### Other
 
