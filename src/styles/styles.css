@@ -256,35 +256,36 @@ main {
 .right-food {
     background-image: url("../images/pattern-round.png");
     background-repeat: repeat;
-    padding: 100px 0 50px 0;
+    background-position: top;
+    padding: 100px 0 31px 0;
 }
 
 .right-food__container {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 0 75px;
-    background-image:url("../images/dish.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right top;
-    min-height: 621px;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .right-food__text-block {
-    max-width: 46ch;
+    padding: 0 10px;
     text-align: center;
-    float: left;
-    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
 }
 
 .right-food__title {
     font-size: 36px;
-    line-height: 24px;
+    line-height: 43px;
     color:  #cc9900; 
-    font-weight: 400;
-    font-family: "Yeseva One";
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
 
 }
 
@@ -294,20 +295,37 @@ main {
     background-image: url("../images/divider-gold.png");
     width: 247px;
     height: 24px;
-    bottom: -40px;
+    bottom: -37px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .right-food__text {
+    max-width: 46ch;
     margin-bottom: 50px;
     font-size: 16px;
     line-height: 24px;
 }
 
+.right-food__image {
+    text-align: center;
+    transform: translate(16%);
+}
+
 .right-food__image img {
     display: inline-block;
-    transform: translateX(20%);
+    max-width: 100%;
+}
+
+.right-food__bg-image {
+    margin-top: -24px;
+    margin-left: -54px;
+    flex: 1 1 50%;
+}
+
+.right-food__bg-image img{
+    display: block;
+    max-width: 100%;
 }
 
 .ingredients {
