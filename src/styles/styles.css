@@ -395,30 +395,25 @@ main {
 }
 
 .menu__container {
-    max-width: 1054px;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 100px 0;
-    /*columns: 454px;*/
+    padding: 94px 40px 37px;
     display: flex;
     flex-flow: row wrap;
 }
 
 .menu-item {
-    width: 474px;
+    width: 454px;
     margin: 0 auto;
-    margin-bottom: 36px;
-    padding: 0 10px;
+    margin-bottom: 27px;
 }
 
 .menu-item__title {
     position: relative;
-    font-family: "Yeseva one", serif;
-    font-weight: 400;
     font-size: 36px;
-    line-height: 36px;
     color: #cc9900;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .menu-item__title::after {
@@ -427,7 +422,7 @@ main {
     background-image: url("../images/divider-gold.png");
     width: 247px;
     height: 24px;
-    bottom: -40px;
+    bottom: -33px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -441,7 +436,7 @@ main {
 .menu-list__title {
     font-family: "Yeseva one", serif;
     font-size: 21px;
-    line-height: 24px;
+    line-height: 18px;
     color: #c89f2d;
     position: relative;
 }
@@ -459,7 +454,7 @@ main {
 .menu-list__price {
     font-family: "Yeseva one", serif;
     font-size: 21px;
-    line-height: 24px;
+    line-height: 18px;
     color: #c89f2d;
     text-align: right;
     transform: translateY(-100%);
@@ -478,9 +473,9 @@ main {
     color: #f8fafa;
     font-size: 14px;
     line-height: 24px;
-    padding: 0 10px;
-    top: 0;
-    right: 0;
+    padding: 0 13px;
+    top: -1px;
+    right: -1px;
     transform: translateY(-100%);
 }
 
