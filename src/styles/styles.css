@@ -340,23 +340,21 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    padding: 100px 40px;
+    padding: 100px 35px;
 }
 
 .text-block {
     background-color: rgba(0, 0, 0, 0.67);
-    padding: 80px 70px;
+    padding: 70px 70px 78px 70px;;
     text-align: center;
 }
 
 .ingredients__title {
     font-size: 36px;
-    line-height: 24px;
     color:  #ffffff; 
     font-weight: 400;
-    font-family: "Yeseva One";
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 57px;
 }
 
 .ingredients__title::after {
@@ -365,9 +363,9 @@ main {
     background-image: url("../images/divider-white.png");
     width: 247px;
     height: 24px;
-    bottom: -50px;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 130%);
 }
 
 .ingredients__text {
@@ -378,15 +376,17 @@ main {
 }
 
 .ingredients__img-container {
-    margin-top: 50px;
+    margin-top: 69px;
     display: flex;
-    justify-content: space-evenly;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .ingredients__img-container img {
     display: block;
     border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
 }
 
 .menu {
