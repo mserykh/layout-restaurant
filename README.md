@@ -26,7 +26,7 @@ Create a web page strictly according to the [layout](https://www.dropbox.com/s/x
 - [x] Navigation should be implemented with a `<nav>` tag. Clickable parts of the menu should be links
 
 ### Fonts
-- [ ] The fonts should be imported properly. Don't forget about the font-weight
+- [x] The fonts should be imported properly. Don't forget about the font-weight
 
 ### Blocks and columns
 
